@@ -1,14 +1,15 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    title: "HCI Blog",
+    title: "StudyPhoenix",
     description: "Project reflection for Human Computer Interaction @ETHZ",
     srcExclude: ['**/README.md', 'gitlab/**', 'gitlab-readme.md'],
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/', activeMatch: '/blog' },
-            { text: 'Project', link: '/project/', activeMatch: '/project' }
+            { text: 'Project', link: '/project/', activeMatch: '/project' },
+            { text: 'Guide', link: '/guide/', activeMatch: '/guide' }
         ],
 
         sidebar: {
@@ -36,12 +37,47 @@ export default defineConfig({
                         { text: 'Links', link: '/links' },
                     ]
                 }
+            ],
+            '/guide': [
+                {
+                    text: 'Development Guide',
+                    base: '/guide',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'Frontend', link: '/frontend' },
+                        { text: 'Backend', link: '/backend' },
+                    ]
+                },
+                {
+                    text: 'WebDev Intro',
+                    base: '/guide/webdev',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'SCSS', link: '/scss' },
+                        { text: 'TypeScript', link: '/ts' },
+                        { text: 'Vue.js', link: '/vue' },
+                        { text: 'Vuetify', link: '/vuetify' },
+                        { text: 'API integration', link: '/api' },
+                    ]
+                },
+                {
+                    text: 'Tooling Guide',
+                    base: '/guide/tooling',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'Docker', link: '/docker' },
+                        { text: 'Git (CLI)', link: '/git' },
+                        { text: 'Issues', link: '/issues' },
+                        { text: 'Pull Requests', link: '/prs' },
+                        { text: 'GitHub Projects', link: '/project' },
+                        { text: 'GitHub Actions', link: '/gh-actions' },
+                    ]
+                }
             ]
         },
 
         socialLinks: [
-        // TODO: Update this when repo changes
-            { icon: 'github', link: 'https://github.com/hci-group-15/hci-group-15.github.io' }
+            { icon: 'github', link: 'https://github.com/studyphoenix/studyphoenix.github.io' }
         ]
     }
 })
