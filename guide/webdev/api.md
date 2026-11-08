@@ -1,5 +1,5 @@
 # API interaction and API docs
-The API documentation for the backend can be found (after it's been spun up) [here](http://localhost:8080/swagger/index.html),
+The API documentation for the backend can be found (after it's been spun up) at `http://localhost:8080/swagger/index.html`
 i.e. at the route `/swagger/index.html`.
 
 Some terminology first:

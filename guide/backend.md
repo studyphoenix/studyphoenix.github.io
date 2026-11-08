@@ -11,7 +11,7 @@ docker run -p 8080:8080 --rm ghcr.io/studyphoenix/backend
 
 
 ## API docs
-API documentation is available at `<url>/swagger/index.html`, for local development typically at [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html)
+API documentation is available at `<url>/swagger/index.html`, for local development typically at `http://localhost:8080/swagger/index.html`
 
 
 ## Working on the backend
