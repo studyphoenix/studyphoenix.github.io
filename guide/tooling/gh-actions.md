@@ -5,3 +5,5 @@ allowing us to build applications or run tests based on certain triggers, such a
 In the `frontend` repo, we have a pipeline that checks the quality of your code upon opening a pull request.
 These checks need to pass for the PR to become mergeable.
 This ensures that the code follows the defined coding style and common issues (such as typing errors) are not present in your code.
+
+You can run a new action through the `actions` tab on each GitHub repo, if there are actions that support being triggered manually.
