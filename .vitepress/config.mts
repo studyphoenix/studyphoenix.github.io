@@ -8,7 +8,8 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/', activeMatch: '/blog' },
-            { text: 'Project', link: '/project/', activeMatch: '/project' }
+            { text: 'Project', link: '/project/', activeMatch: '/project' },
+            { text: 'Guide', link: '/guide/', activeMatch: '/guide' }
         ],
 
         sidebar: {
@@ -36,12 +37,40 @@ export default defineConfig({
                         { text: 'Links', link: '/links' },
                     ]
                 }
+            ],
+            '/guide': [
+                {
+                    text: 'Development Guide',
+                    base: '/guide',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'Frontend', link: '/frontend' },
+                        { text: 'Backend', link: '/backend' },
+                    ]
+                },
+                {
+                    text: 'WebDev Intro',
+                    base: '/guide/webdev',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'Frontend', link: '/frontend' },
+                        { text: 'Backend', link: '/backend' },
+                    ]
+                },
+                {
+                    text: 'Tooling Guide',
+                    base: '/guide/tooling',
+                    items: [
+                        { text: 'Introduction', link: '/' },
+                        { text: 'Frontend', link: '/frontend' },
+                        { text: 'Backend', link: '/backend' },
+                    ]
+                }
             ]
         },
 
         socialLinks: [
-        // TODO: Update this when repo changes
-            { icon: 'github', link: 'https://github.com/hci-group-15/hci-group-15.github.io' }
+            { icon: 'github', link: 'https://github.com/studyphoenix/studyphoenix.github.io' }
         ]
     }
 })
