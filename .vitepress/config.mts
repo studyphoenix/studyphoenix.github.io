@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    title: "HCI Blog",
+    title: "StudyPhoenix",
     description: "Project reflection for Human Computer Interaction @ETHZ",
     srcExclude: ['**/README.md', 'gitlab/**', 'gitlab-readme.md'],
     themeConfig: {
@@ -53,8 +53,11 @@ export default defineConfig({
                     base: '/guide/webdev',
                     items: [
                         { text: 'Introduction', link: '/' },
-                        { text: 'Frontend', link: '/frontend' },
-                        { text: 'Backend', link: '/backend' },
+                        { text: 'SCSS', link: '/scss' },
+                        { text: 'TypeScript', link: '/ts' },
+                        { text: 'Vue.js', link: '/vue' },
+                        { text: 'Vuetify', link: '/vuetify' },
+                        { text: 'API integration', link: '/api' },
                     ]
                 },
                 {
@@ -62,8 +65,12 @@ export default defineConfig({
                     base: '/guide/tooling',
                     items: [
                         { text: 'Introduction', link: '/' },
-                        { text: 'Frontend', link: '/frontend' },
-                        { text: 'Backend', link: '/backend' },
+                        { text: 'Docker', link: '/docker' },
+                        { text: 'Git (CLI)', link: '/git' },
+                        { text: 'Issues', link: '/issues' },
+                        { text: 'Pull Requests', link: '/prs' },
+                        { text: 'GitHub Projects', link: '/project' },
+                        { text: 'GitHub Actions', link: '/gh-actions' },
                     ]
                 }
             ]

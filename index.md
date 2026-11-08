@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "HCI Blog"
-  text: "Project reflection for Human Computer Interaction @ETHZ"
+  name: "StudyPhoenix Blog"
+  text: "Project reflection and docs for StudyPhoenix"
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Project Details
       link: /project
+    - theme: alt
+      text: Development Guide
+      link: /guide
 
 features:
   - title: Feature A
