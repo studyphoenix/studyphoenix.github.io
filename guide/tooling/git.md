@@ -13,3 +13,15 @@
 - Switch branches: `git switch <branch name>`
 - Push to new branch: `git push --set-upstream origin <branch name>`
 - Pull and rebase: `git pull --rebase`
+
+## Git clone with SSH keys
+This is the most secure way of connecting to git remotes. To enable this, you need an SSH key from your device. You can generate one using
+```bash
+ssh-keygen -f ~/.ssh/github
+```
+(you can change the name of the key by changing the file path). Then add the following to your `~/.ssh/config`:
+```ssh-config
+Host github.com
+   IdentitiesOnly yes
+   IdentityFile ~/.ssh/github
+```
