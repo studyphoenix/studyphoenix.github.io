@@ -14,6 +14,14 @@
 - Push to new branch: `git push --set-upstream origin <branch name>`
 - Pull and rebase: `git pull --rebase`
 
+## Moving (not pushed) commits to another branch
+```bash
+git switch [branch to move them to]
+git merge [old branch]
+git switch [old branch]
+git reset --hard origin/[old branch]
+```
+
 ## Git clone with SSH keys
 This is the most secure way of connecting to git remotes. To enable this, you need an SSH key from your device. You can generate one using
 ```bash
